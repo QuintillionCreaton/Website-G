@@ -1,0 +1,311 @@
+
+td {
+    max-width: 400px;
+}
+body {
+    margin: 0;
+        padding: 0;
+        height: 100%;
+}
+.imgwidth {
+    max-width: 200px;
+    display: block;
+    
+}
+.actueel {
+    display: inline-block;
+    padding-right: 20px;
+}
+#actueeltext {
+    color: rgba(220, 0, 0, 0.75);
+    font-size: 60px;
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 60px;
+}
+
+.jumbotron {
+    width: 100%;  
+    position: relative;
+}
+
+.headerM {
+background-color: #FFC600;
+font-family: Verdana;
+}
+
+
+
+
+.knoppenM {
+color: #900;
+font-weight: bold;
+}
+
+.textM {
+font-family: Verdana;
+}
+
+.tableM {
+border-collapse:collapse;
+margin-top: 0px;
+margin-left: 30%;
+position: absolute;
+border: 3px solid #FFC600;
+border-radius: 10%;
+}
+
+.tdM {
+border: none;
+outline: none;
+color: white;
+}
+
+/* FILMS */
+.filmfig {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    margin-left: 30px;
+}
+.filmfigcap {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.50);
+    color: white;
+    padding: 10px 20px;
+    height: 279px;
+    opacity: 0;
+    bottom: 0;
+    width: 200px;
+    left: -30%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.filmfig:hover .filmfigcap {
+    opacity: 1;
+    left: 0;
+    width: 200px;
+    height: 279px;
+}
+.jump {
+    width: 200px;
+}
+
+.notebook {
+    width: 200px;
+}
+
+.hobbit {
+    width: 200px;
+}
+
+.pearl {
+    width: 200px;
+}
+
+.inception {
+    width: 200px;
+}
+
+.info {
+    color: white;
+    position: fixed;
+    margin-top: 800px;
+    margin-left: 40%;
+    z-index: 2;
+}
+
+body {
+    background-color: black;
+}
+.imgtop {
+    width: 1800px;
+    height: 400px;
+    position: absolute;
+    background-color: #cc4144;
+    margin-left: 45px;
+    border-radius: 10px;
+}
+.filmlijst {
+   color: white;
+   width: 200px;
+   z-index: 2; 
+   padding-right: 100px;
+   display: inline-block;
+   margin-left: 50px;
+}
+#top5 {
+    color: white;
+    margin-left: 830px;
+}
+
+#filmlijst {
+    margin-left: 10px;
+    margin-top: 60px;
+}
+.reserveer {
+    position: absolute;
+    background: rgba(220, 220, 220, 1);
+    color: red;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 40px;
+    border-style: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.details {
+    position: absolute;
+    background: rgba(220, 220, 220, 1);
+    color: red;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-style: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.imgcontainer {
+    position: fixed;
+    width: 40%;
+    z-index: 105;
+}
+
+.logo {
+    width: 230px;
+    position: absolute;
+    margin-top: -59px;
+    margin-left: 40px;
+    display: fixed;
+}
+.topmenu {
+    display: inline-block;
+    margin-right: 4px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;  
+}
+#active {
+    color: red;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+#topmenu {
+    position: fixed;
+    width: 100%;
+    margin-left: 4px;
+    text-align: center;
+    padding: 3px;
+    height: 5px;
+    z-index: 100;
+}
+#opacity {
+    position: fixed;
+    width: 100%;
+    margin-left: -2px;
+    text-align: center;
+    padding: 1px;
+    height: 60px;
+    background-color: #cc4144;
+    opacity: 0.9;
+    z-index: 99;
+}
+body {
+    background-color: black;
+    font-family: Verdana;
+}
+.nolink {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding-top:40px;
+}
+.menufig {
+    margin-top: -20px;
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    display: block;
+    width: 68px;
+}
+.menufigc {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0); 
+    color: white;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    top: 40px;
+    text-align: center;
+    -webkit-transition: all 0.8s ease;
+     
+}
+.menufig:hover .menufigc {
+    opacity: 1;
+    top: 40px;
+}
+.menubutton{
+    width: 70px;
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media screen and (max-width: 640px){
+    body {
+        margin: 0;
+        height: 100%;
+    }
+/*    topmenubar*/
+    .menubutton {
+        max-width: 60px;
+        
+    }
+    .menufig {
+        margin-left: -23px;
+    }
+    .menufigc {
+        opacity: 1;
+        position: absolute;
+    }
+    #topmenu1 {
+        position: absolute;
+        margin-left: 3px;
+    }
+    #opacity{
+        height: 80px;
+    }
+    .logo {
+        display:none;
+    }
+    
+    .imgtop {
+    width: 400px;
+    height: 1800px;
+    position: absolute;
+    background-color: #cc4144;
+    margin-left: 8px;
+    border-radius: 10px;
+    }
+    
+    #top5 {
+    color: white;
+    margin-left: 130px;
+    }
+    .filmlijst {
+        margin-left: 30px;
+    }
+    .jumbotron {
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="Contactformulier.css">
+        <script type="text/javascript" src="contactformulier.js" ></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="opacity"></div>
+            <div class="imgcontainer"><img class="logo" src="http://i40.photobucket.com/albums/e215/Nick_Cheung/logofilmpje_zps4480f494.png?t=1412247091"/></div>
+            <div id="topmenu">
+                <ul id="topmenu1">
+                    <li class="topmenu">
+                        <a href="index.html"><figure class="menufig"><img class="menubutton" src="http://i40.photobucket.com/albums/e215/Nick_Cheung/HomeButton_zps075f1985.png" alt=""/>
+                                <figcaption class="menufigc">
+                                    <h4>Home</h4>
+                                </figcaption>
+                            </figure></a> 
+                    </li>
+                    <li class="topmenu">
+                        <a href="over ons.html"><figure class="menufig"><img class="menubutton" src="http://i40.photobucket.com/albums/e215/Nick_Cheung/Aboutbutton_zps21baedc0.png?t=1412246272" alt=""/>
+                                <figcaption class="menufigc">
+                                    <h4>About</h4>
+                                </figcaption>
+                            </figure></a>
+                    </li>
+                    <li class="topmenu">
+                        <a href="BioscoopAgenda.html"><figure class="menufig"> <img class="menubutton" src="http://i40.photobucket.com/albums/e215/Nick_Cheung/Calenderbutton_zps3663e506.png?t=1412245965" alt=""/>
+                                <figcaption class="menufigc">
+                                    <h4>Agenda</h4>
+                                </figcaption>
+                            </figure></a>
+                    </li>
+                    <li class="topmenu">
+                        <a href="Contactformulier.html"><figure class="menufig"><img class="menubutton" src="http://i40.photobucket.com/albums/e215/Nick_Cheung/Contactbutton_zps462bddd9.png" alt=""/>
+                                <figcaption class="menufigc">
+                                    <h4>Contact</h4>
+                                </figcaption>
+                            </figure></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img id="backgroundimage" src="http://i40.photobucket.com/albums/e215/Nick_Cheung/phoneicon_zpsfb2f1a07.png" alt="bajs">
+        <!--        <iframe src="http://goo.gl/jnoVEf" frameborder="0" style="border:0 "></iframe>-->
+        <div id="container">
+            <h2 class="kopje"> Neem contact met ons op bel (010) 234 51 98</h2>
+            <p class="kopje"> Heeft u een vraag, klacht of opmerking? Vul dan het onderstaande formulier in, wij zullen zo snel mogelijk contact met u opnemen.</p>
+            <hr>
+            <form id="contactformulier" name="contactformulier" action="#" onsubmit="return validateForm()" method="post">
+                <ul class="tabel">
+                    <li class="onderwerp2 voornaamresp">
+                        <!--                        <p class="tabeltekst">Vul hier je voornaam in</p>-->
+                        <input class="input" 
+                               placeholder="Voornaam*" 
+                               onfocus=" if (this.value === 'Voornaam*')
+                                           this.value = '';" 
+                               onblur="if (this.value === '')
+                                           this.value = 'Voornaam*';" 
+                               name="Voornaam">
+                    </li>
+                    <li class="onderwerp achternaamresp">
+                        <!--                        <p class="tabeltekst">Vul hier je achternaam in</p>-->
+                        <input class="input2 "
+                               placeholder="Achternaam*" 
+                               onfocus=" if (this.value === 'Achternaam*')
+                                           this.value = '';" 
+                               onblur="if (this.value === '')
+                                           this.value = 'Achternaam*';" 
+                               name="Achternaam">
+                    </li>
+                    <li class="onderwerp emailadresresp">
+                        <!--                        <p class="tabeltekst">Vul hier je Emailadres in</p>-->
+                        <input class="input2 " placeholder="Emailadres*" onsubmit="return validateForm();"                    
+                               name="Emailadres">
+                    </li>
+                    <li class="onderwerp2 telefoonnummerresp">
+                        <!--                        <p class="tabeltekst">Vul hier je telefoonnummer in</p>-->
+                        <input class="input " 
+                               placeholder="Telefoonnummer" 
+                               onfocus=" if (this.value === 'Telefoonnummer')
+                                           this.value = '';"
+                               onblur="if (this.value === '')
+                                           this.value = 'Telefoonnummer';" 
+                               name="Telefoonnummer"
+                               maxlength="11">
+                    </li>
+                    <li class="onderwerp adresresp">
+                        <!--                        <p class="tabeltekst">Adres</p>-->
+                        <input class="input2" placeholder="Adres" onfocus=" if (this.value === 'Adres')
+                                    this.value = '';"
+                               onblur="if (this.value === '')
+                                           this.value = 'Adres';" name="Adres">
+                    </li>
+                    <li class="onderwerp vraagresp">
+                        <!--                        <p class="tabeltekst">Reden contact</p>-->
+                        <select id="dropdown" name="redencontact">
+                            <option value="vraag">Vraag</option>
+                            <option value="opmerking">Opmerking</option>
+                            <option value="klacht">Klacht</option>
+                        </select>
+                    </li>
+                    <li id="bericht">
+                        <p id="opmerkingkopje">Opmerkingen</p>
+                        <textarea class="bericht" rows="4" cols="46" name="opmerkingen"></textarea><br>
+                        <input type="submit" id="verzendknop"  name="verzenden" value="Verzenden">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,286 @@
+body {     
+    background-color: black;     
+    font-family: Verdana;
+    margin:0;
+    padding:0;
+    height:100%;
+} 
+#container1{
+    /*background-color: white;*/
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-top:2.8%;
+    text-align:center;
+}
+#blok2{
+    margin-top:30px;
+    padding:0;
+    background-color:black;
+    height:100%;
+    width:100%;
+}
+#contentblok1{
+    height:65%;
+    width:35%;
+    padding:0 101px;
+    margin-left:55%;
+    margin-top: 47%;
+    margin-right:-1%;
+    background-color:#CC4144;
+    text-align:left;
+    z-index:20;
+    opacity:0.7;
+    float:right;
+    position:absolute;
+    top:-83%;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+}
+.tekst{
+    color:white;
+    display:block;
+}
+#plaatje1{
+    height:100%;
+    width:100%;
+}
+#innerblok1{
+    height:100%;
+    width:90%;
+    /*background-color:yellow;*/
+    margin:auto;
+    padding-left:100px;
+    text-align:right;
+    position:absolute;
+}
+#innerblok2{
+    height:100%;
+    width:100%;
+    /*background-color:purple;*/
+    z-index:20;
+    position:absolute;
+    margin-top:40%;
+
+
+}
+.innertekst1{
+    color:white;
+    text-align:left;
+    margin-left:55%;
+    margin-top:3%;
+
+}
+.innertekst2{
+    color:white;
+    text-align:left;
+    margin-left:5%;
+    margin-top:3%;
+    opacity:1;
+}
+#persoonsinformatie{
+    width:43%;
+    height:85%;
+    background-color:#CC4144;
+    position:relative;
+    top:11%;
+    border-radius:10%;
+    opacity:0.7;
+    display:inline-block;
+    margin-bottom:1.5%;
+    padding-right:2%;
+}
+
+#persoonsinformatie1{
+    width:43%;
+    height:85%;
+    background-color:#CC4144;
+    position:relative;
+    top:9%;
+    margin-left:2.5%;
+    border-radius:10%;
+    opacity:0.7;
+    display:inline-block;
+    padding-right:2%;
+}
+
+/*.persoonsinformatie1{
+    position:relative;
+    color:white;
+    z-index:500;
+    display:block;
+    right:50px;
+    bottom:180px;
+    margin:10px 0;
+    font-weight: bold;
+    font-size:1.3em;
+    
+}*/
+iframe {
+    width: 50%;
+    height: 75%;
+    position: absolute;
+    margin-left: -900px;
+    margin-top: 25px;
+    border-radius: 5%;
+    z-index: 90;
+}
+/*.kruis {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 25px;
+    border-radius: 10px;
+}*/
+.kopje{
+    color:white;
+    display:block;
+    margin-bottom:5%;
+}
+/* top menu bar */
+.imgcontainer {
+    position: fixed;
+    width: 40%;
+    z-index: 105;
+}
+
+.logo {
+    width: 230px;
+    position: absolute;
+    margin-top: -59px;
+    margin-left: 40px;
+    display: fixed;
+}
+.topmenu {
+    display: inline-block;
+    margin-right: 4px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;  
+}
+#active {
+    color: red;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+#topmenu {
+    position: fixed;
+    width: 100%;
+    margin-left: 4px;
+    text-align: center;
+    padding: 3px;
+    height: 5px;
+    z-index: 100;
+}
+#opacity {
+    position: fixed;
+    width: 100%;
+    margin-left: -2px;
+    text-align: center;
+    padding: 1px;
+    height: 60px;
+    background-color: #cc4144;
+    opacity: 0.9;
+    z-index: 99;
+}
+body {
+    background-color: black;
+    font-family: Verdana;
+}
+.nolink {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding-top:40px;
+}
+.menufig {
+    margin-top: -20px;
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    display: block;
+    width: 68px;
+}
+.menufigc {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0); 
+    color: white;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    top: 40px;
+    text-align: center;
+    -webkit-transition: all 0.8s ease;
+
+}
+.menufig:hover .menufigc {
+    opacity: 1;
+    top: 40px;
+}
+.menubutton{
+    width: 70px;
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media screen and (max-width: 640px){
+    body {
+        margin: 0;
+        height: 100%;
+    }
+    /*    topmenubar*/
+    .menubutton {
+        max-width: 60px;
+    }
+    .menufig {
+        margin-left: -23px;
+    }
+    .menufigc {
+        opacity: 1;
+        position: absolute;
+    }
+    #topmenu1 {
+        position: absolute;
+        margin-left: 3px;
+    }
+    #opacity{
+        height: 80px;
+    }
+    .logo {
+        display: none;
+    }
+    #plaatje1 {
+        height: 300px;
+        margin-top: 80px;
+    }
+    iframe {
+        width: 400px;
+        height: 300px;
+        margin-left: -200px;
+        margin-top: 180px;
+        z-index: 90;
+    }
+    .innertekst1 {
+        margin: 0;
+        margin-left: -90px;
+    }
+    #contentblok1 {
+        display: none;
+    }
+    #persoonsinformatie {
+        width: 90%;
+        height: 90%;
+        margin-top: 60%;
+    }
+    #persoonsinformatie1 {
+        width: 90%;
+        height: 90%;
+        margin-top: 6%;
+        margin-bottom: 30px;
+    }
+}

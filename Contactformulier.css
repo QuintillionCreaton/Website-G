@@ -1,0 +1,295 @@
+body {     
+    background-color: black;     
+    font-family: Verdana;
+    margin:0;
+    padding:0;
+    height:100%;
+    color:white;
+} 
+.header{
+    width:100%;
+    height:100%;
+}
+
+body {
+    background-color: black;
+    font-family: Verdana;
+}
+
+#telmail{
+    width:100%;
+    height:100px;
+    background-color:orange;
+    margin-top: 64px;
+    position:absolute;
+}
+#container{
+    height:100%;
+    width:100%;
+}
+#container2{
+    background-color:green;
+    height:100%;
+    width:100%;
+}
+iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 165px;
+}
+#backgroundimage{
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 49%;
+}
+.tabeltekst{
+    text-align:center;
+    font-size:1em;
+}
+.tabel{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin:0;
+    padding-left:0;
+}
+/*.tabel2{
+    width: 28%;
+    height: 500px;
+    list-style: none;
+    display:inline-block;
+}*/
+hr{
+    margin: 10px auto;
+    width: 95%;
+}
+.onderwerp{
+    margin: 10px;
+/*    margin-left: 130px;*/
+    width:25%;
+    display:inline-block;
+    text-align:center;
+}
+.onderwerp2{
+    margin: 50px 25px 25px 80px;
+    margin-left:230px;
+    width:25%;
+    display:inline-block;
+}
+.kopje{
+    text-align:center;
+    margin:20px 0;
+    
+}
+.input{
+    width:50%;
+    font-size:1em;
+    border-radius:0px;
+    padding:10px;
+    margin-left:70px;
+    text-align:center;
+}
+.input2{
+    width:50%;
+    font-size:1em;
+    border-radius:0px;
+    padding:10px;
+    text-align:center;
+}
+#dropdown{
+    width:50%;
+    height:30px;
+    text-align:center;
+ }
+ #bericht{
+     margin-top:20px;
+     margin-left:14%;
+     margin-bottom: 50px;
+ }
+ .bericht{
+     font-size:2em;
+     border-radius:10px;
+     margin-left: 400px
+ }
+ #opmerkingkopje{
+     margin-left:40%;
+     padding:0  15px;
+ }
+ textarea{
+     resize:none;
+ }
+ #verzendknop{
+     width:20%;
+     height:5%;
+     background-color: #CC4144;
+     color: white;
+     border-radius:10px;
+     margin-top:50px;
+     margin-left:34%;
+     font-size:2em;
+ }
+ 
+ .imgcontainer {
+    position: fixed;
+    width: 40%;
+    z-index: 105;
+}
+
+.logo {
+    width: 230px;
+    position: absolute;
+    margin-top: -59px;
+    margin-left: 40px;
+    display: fixed;
+}
+.topmenu {
+    display: inline-block;
+    margin-right: 4px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;  
+}
+#active {
+    color: red;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+#topmenu {
+    position: fixed;
+    width: 100%;
+    margin-left: 4px;
+    text-align: center;
+    padding: 3px;
+    height: 5px;
+    z-index: 100;
+}
+#opacity {
+    position: fixed;
+    width: 100%;
+    margin-left: -2px;
+    text-align: center;
+    padding: 1px;
+    height: 60px;
+    background-color: #cc4144;
+    opacity: 0.9;
+    z-index: 99;
+}
+body {
+    background-color: black;
+    font-family: Verdana;
+}
+.nolink {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding-top:40px;
+}
+.menufig {
+    margin-top: -20px;
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+    display: block;
+    width: 68px;
+}
+.menufigc {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0); 
+    color: white;
+    width: 65px;
+    height: 65px;
+    opacity: 0;
+    top: 40px;
+    text-align: center;
+    -webkit-transition: all 0.8s ease;
+     
+}
+.menufig:hover .menufigc {
+    opacity: 1;
+    top: 40px;
+}
+.menubutton{
+    width: 70px;
+    margin-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media screen and (max-width: 640px){
+    body {
+        margin: 0;
+        height: 100%;
+    }
+
+    .menubutton {
+        max-width: 60px;
+    }
+    .menufig {
+        margin-left: -23px;
+    }
+    .menufigc {
+        opacity: 1;
+        position: absolute;
+    }
+    #topmenu1 {
+        position: absolute;
+        margin-left: 3px;
+    }
+    #opacity{
+        height: 80px;
+    }
+    .logo {
+        display: none;
+    }
+    
+    .voornaamresp{
+        margin: 0 0 0px 30px;
+        width: 100%;
+        margin-left: 23px;
+    }
+    
+    .achternaamresp{
+        margin-left: auto;
+        width: 100%;
+    }
+    
+    .emailadresresp{
+        margin: 0px;
+        width: 100%;   
+    }
+    
+    .telefoonnummerresp{
+        margin: 9px 0px 0px 30px;
+        margin-left: 22px;
+        width: 100%;
+    }
+    .adresresp{
+        margin-left: auto;    
+        width:100%;
+    }
+    .vraagresp{
+       width: 110%;
+       margin-left: -5%;
+    }
+    #opmerkingkopje{
+        width: 100%;
+        margin-left: 100px;
+    }
+    .bericht{
+        width: 250px;
+        margin-left: 40px;
+    }
+    
+    #verzendknop{
+        width: 65%;
+        background-color: #CC4144;
+        margin-left: 13%;
+        color: white;
+    }
+    #backgroundimage {
+        margin-left: 40%;
+    }
+}
